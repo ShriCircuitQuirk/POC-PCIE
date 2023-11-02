@@ -1,0 +1,417 @@
+[0000.799] I> Qspi flash params source = mb1bct
+[0000.816] I> Qspi flash params source = mb1bct
+[0000.855] W>  Platform config not found in BCT
+[0000.907] I> MB1 done
+
+▒▒▒▒main enter
+SPE VERSION #: R01.00.18 Created: Jan 29 2021 @ 14:18:27
+HW Function test
+Start Scheduler.
+in late init
+▒▒
+  [0000.917] I> Welcome to MB2(TBoot-BPMP) (version: default.t194-mobile-74494172)
+[0000.918] I> DMA Heap @ [0x526fa000 - 0x52ffa000]
+[0000.918] I> Default Heap @ [0xd486400 - 0xd48a400]
+[0000.919] E> DEVICE_PROD: Invalid value data = 70020000, size = 0.
+[0000.924] W> device prod register failed
+[0000.928] I> gpio framework initi▒ʚ▒▒J▒▒▒▒Ʌ▒▒}▒▒▒}▒ɥٕ▒}ɕ▒▒▒ѕ▒▒$▒YV▒.]Y▒▒'nvidia,tegra194-gpio-aon' drive5R▒▒▒▒rʢ▒▒J▒r▒▒▒▒▒▒▒▒▒ɑ}▒Ʌ▒́J▒▒j▒▒▒▒5R▒▒▒▒rʪ▒▒J▒▒▒}▒▒٥▒▒▒▒5▒▒e▒*▒)▒Z▒.]X▒▒Y'HLC▒+LL▒▒.956] I> qspi flash-0 params source = boot args
+[0000.961] I> QSPI-0l initialized successfully
+[0000.965] I> sdmmc-3 params source = safe params
+[0001.366] I> sdmmc DDR50 mode
+[0001.384] I> Found 41 partitions in QSPI_FLASH (instance 0)
+[0001.401] W> Cannot find any partition table for 00000003
+[0001.402]  > PARTITION_MANAGER:Failed▒t▒▒artition.
+L▒▒▒▒]▒▒ ▒▒▒
+            ▒▒U▒Q*HJZ▒.]X▒▒YH▒▒▒[0002.058] I> Relocating BR-BCT
+[0002.059]  > DEVICE_PROD: device prod is not initialized.
+[0002.085] E> I2C: slave not found in slaves.
+[0002.086] E> I2C: Could not write 0 bytes to slave: 0x00ae with repeat start true.
+[0002.087] E> I2C_DEV: Failed to send register address 0x00000000.
+[0002.088] E> I2C_DEV: Could not read 256 registers of size 1 from slave 0xae at 0x00000000 via instance 0.
+[0002.089] E> eeprom: Failed to read I2C slave device
+[0002.092] I> Failed to read CVB eeprom data @ AE
+[0002.096] I> Retrying CVB eeprom read @ AC ...
+[0002.101] E> I2C: slave not found in slaves.
+[0002.105] E> I2C: Could not write 0 bytes to slave: 0x00ac with repeat start true.
+[0002.113] E> I2C_DEV: Failed to send register address 0x00000000.
+[0002.119] E> I2C_DEV: Could not read 256 registers of size 1 from slave 0xac at 0x00000000 via instance 0.
+[0002.128] E> eeprom: Failed to read I2C slave device
+[0002.132] I> Failed to read CVB eeprom data @ AC
+[0002.409] I> Relocating OP-TEE dtb from: 0x6bfff710 to 0x70050000, size: 1008
+[0002.410] I> [0] START: 0x80000000, SIZE: 0x2f000000
+[0002.411] I> [1] START: 0xaf010000, SIZE: 0x189f0000
+[0002.411] I> [2] START: 0xc7b00000, SIZE: 0xc0000
+[0002.412] I> [3] START: 0xca000000, SIZE: 0x800000
+[0002.412] I> dram_block larger than 80000000
+[0002.414] I> [4] START: 0x100000000, SIZE: 0x180000000
+[0002.426] I> Setting NS memory ranges to OP-TEE dtb finished.
+[0002.429] I> found decompressor handler: lz4
+[0002.740] I> EKB detected (length: 0x410) @ VA:0x52709400
+[0002.741] I> Setting EKB blob info to OPTEE dtb finished.
+▒▒NOTICE:  BL31: v2.6(release):346877e39
+NOTICE:  BL31: Built : 12:32:40, Aug  1 2023
+I/TC: Physical secure memory base 0xcb040000 size 0xf00000
+▒▒
+  bpmp: init
+bpmp: tag is 128431eec76692047e1ac1ebc0392266
+sku_dt_init: not sku 0x00
+clk_early initialized
+mail_early initialized
+fuse initialized
+hwwdt initialized
+t194_ec_get_ec_list: found 45 ecs
+ec initialized
+vmon_setup_monitors: found 3 monitors
+vmon initialized
+adc initialized
+fmon_populate_monitors: found 73 monitors
+fmon initialized
+mc initialized
+reset initialized
+nvhs initialized
+uphy_early initialized
+emc_early initialized
+392 clocks registered
+clk initialized
+io_dpd initialized
+thermal initialized
+thermal_mrq initialized
+i2c initialized
+vrmon_dt_init: vrmon node not found
+vrmon_chk_boot_state: found 0 rail monitors
+vrmon initialized
+regulator initialized
+avfs_clk_platform initialized
+soctherm initialized
+aotag initialized
+powergate initialized
+dvs initialized
+pm initialized
+suspend initialized
+pg_late initialized
+pg_mrq_init initialized
+strap initialized
+nvl initialized
+emc initialized
+emc_mrq initialized
+clk_dt initialized
+tj_init initialized
+uphy_dt initialized
+uphy_mrq initialized
+▒▒▒▒uphy initialized
+▒▒I/▒▒ec_swd_poll_start: 281 reg polling start w period 47 ms
+ec_late initialized
+hwwdt_late initialized
+reset_mrq initialized
+ec_mrq initialized
+fmon_mrq initialized
+clk_mrq initialized
+avfs_mrq initialized
+mail_mrq initialized
+i2c_mrq initialized
+tag_mrq initialized
+console_mrq initialized
+mrq initialized
+clk_sync_fmon_post initialized
+▒▒TC:
+▒▒clk_dt_late initialized
+noc_late initialized
+pm_post initialized
+dbells initialized
+dmce initialized
+cvc initialized
+avfs_clk_mach_post initialized
+▒▒I/T▒▒avfs_clk_platform_post initialized
+▒▒C:▒▒cvc_late initialized
+regulator_post initialized
+▒▒ Non-▒▒rm initialized
+console_late initialized
+clk_dt_post initialized
+▒▒se▒▒mc_reg initialized
+▒▒cure external DT found
+▒▒pg_post initialized
+profile initialized
+fuse_late initialized
+extras_post initialized
+bpmp: init complete
+entering main console loop
+] ▒▒I/TC: OP-TEE version: 3.21 (gcc version 9.3.0 (Buildroot 2020.08)) #2 Tue Aug  1 19:39:56 UTC 2023 aarch64
+I/TC: WARNING: This OP-TEE configuration might be insecure!
+I/TC: WARNING: Please check https://optee.readthedocs.io/en/latest/architecture/porting_guidelines.html
+I/TC: Primary CPU initializing
+I/TC: Primary CPU switching to normal world boot
+▒▒
+  [0003.456] I> Welcome to NVDisp-Init
+[0003.456] I> NVDisp-Init version: t194-709c0123
+[0003.457] I> CPU-BL Params @ 0xca020000
+[0003.457] I>  0) Base:0x00000000 Size:0x00000000
+[0003.457] I>  1) Base:0xc8100000 Size:0x00100000
+[0003.458] I>  2) Base:0xc9800000 Size:0x00200000
+[0003.458] I>  3) Base:0xc8600000 Size:0x00200000
+[0003.460] I>  4) Base:0xc8000000 Size:0x00100000
+[0003.465] I>  5) Base:0xc7f00000 Size:0x00100000
+[0003.469] I>  6) Base:0xc9400000 Size:0x00400000
+[0003.474] I>  7) Base:0xc9000000 Size:0x00400000
+[0003.478] I>  8) Base:0xc7e00000 Size:0x00100000
+[0003.483] I>  9) Base:0xc7d00000 Size:0x00100000
+[0003.487] I> 10) Base:0xca800000 Size:0x00800000
+[0003.492] I> 11) Base:0x40000000 Size:0x00040000
+[0003.496] I> 12) Base:0xc7c00000 Size:0x00100000
+[0003.501] I> 13) Base:0x40046000 Size:0x00002000
+[0003.505] I> 14) Base:0x40048000 Size:0x00002000
+[0003.509] I> 15) Base:0xaf000000 Size:0x00004000
+[0003.514] I> 16) Base:0x4004a000 Size:0x00002000
+[0003.518] I> 17) Base:0xc7a00000 Size:0x00100000
+[0003.523] I> 18) Base:0x4004c000 Size:0x00002000
+[0003.527] I> 19) Base:0xc9a00000 Size:0x00600000
+[0003.532] I> 20) Base:0x4004e000 Size:0x00002000
+[0003.536] I> 21) Base:0xc7bc0000 Size:0x0000c000
+[0003.541] I> 22) Base:0x00000000 Size:0x00000000
+[0003.545] I> 23) Base:0xc7be0000 Size:0x00020000
+[0003.550] I> 24) Base:0xcc000000 Size:0x02000000
+[0003.554] I> 25) Base:0x40050000 Size:0x00002000
+[0003.559] I> 26) Base:0x40040000 Size:0x00006000
+[0003.563] I> 27) Base:0xc8c00000 Size:0x00400000
+[0003.567] I> 28) Base:0xc8400000 Size:0x00200000
+[0003.572] I> 29) Base:0xc8800000 Size:0x00400000
+[0003.576] I> 30) Base:0xc7bd0000 Size:0x00010000
+[0003.581] I> 31) Base:0x00000000 Size:0x00000000
+[0003.585] I> 32) Base:0xf8000000 Size:0x08000000
+[0003.590] I> 33) Base:0xce000000 Size:0x2a000000
+[0003.594] I> 34) Base:0xcb000000 Size:0x01000000
+[0003.599] I> 35) Base:0xae000000 Size:0x01000000
+[0003.603] I> 36) Base:0xa0000000 Size:0x0e000000
+[0003.608] I> 37) Base:0xca000000 Size:0x00800000
+[0003.612] I> 38) Base:0x80000000 Size:0x20000000
+[0003.617] I> 39) Base:0xb0000000 Size:0x08000000
+[0003.621] I> 40) Base:0x00000000 Size:0x00000000
+[0003.626] I> 41) Base:0x00000000 Size:0x00000000
+[0003.630] I> 42) Base:0xc8200000 Size:0x00200000
+[0003.634] I> 43) Base:0x00000000 Size:0x00000000
+[0003.639] I> 44) Base:0x00000000 Size:0x00000000
+[0003.643] I> 45) Base:0x00000000 Size:0x00000000
+[0003.648] GIC-SPI Target CPU: 0
+[0003.651] Interrupts Init done
+[0003.654] calling constructors
+[0003.657] initializing heap
+[0003.659] I> Heap: [0xa0960000 ... 0xadf00000]
+[0003.663] initializing threads
+[0003.666] initializing timers
+[0003.669] creating bootstrap completion thread
+[0003.673] top of bootstrap2()
+[0003.676] CPU: MIDR: 0x4E0F0040, MPIDR: 0x80000000
+[0003.681] initializing platform
+[0003.684] E> DEVICE_PROD: Invalid value data = 0, size = 0.
+[0003.689] W> device prod register failed
+[0003.693] I> Bl_dtb @0xadf00000
+[0003.696] I> gpio framework initialized
+[0003.707] I> tegrabl_gpio_driver_register: register 'nvidia,tegra194-gpio' driver
+[0003.711] I> tegrabl_gpio_driver_register: register 'nvidia,tegra194-gpio-aon' driver
+[0003.718] I> fixed regulator driver initialized
+[0003.733] I> register 'maxim' power off handle
+[0003.735] I> virtual i2c enabled
+[0003.735] I> registered 'maxim,max20024' pmic
+[0003.736] I> tegrabl_gpio_driver_register: register 'max20024-gpio' driver
+[0003.737] I> Boot-device: QSPI
+[0003.740] I> Boot_device: QSPI_FLASH instance: 0
+[0003.745] I> configure_qspi_clk: qparams clk_src = 5, clk_div = 0, clk_src_freq = 800000000, interface_freq = 50000000
+[0003.755] I> configure_qspi_clk: FORCING INTERFACE_FREQ TO 133000000!!
+[0003.763] I> QSPI source rate = 204000 Khz
+[0003.766] I> Requested rate for QSPI clock = 34000 Khz
+[0003.771] I> BPMP-set rate for QSPI clk = 34000 Khz
+[0003.776] I> tx_clk_tap_delay : 0
+[0003.779] I> rx_clk_tap_delay : 16
+[0003.782] I> QSPI Flash Size = 32 MB
+[0003.790] I> Qspi initialized successfully
+[0003.790] I> qspi flash-0 params source = boot args
+[0003.794] W> No board IDs available
+[0003.797] E> Failed to get board id info!
+[0003.803] I> sdmmc-3 params source = safe params
+[0003.810] I> Found 41 partitions in QSPI_FLASH (instance 0)
+[0003.812] W> Cannot find any partition table for 00000003
+[0003.816] E> Failed to publish 00000003
+[0003.825] I> Found 22 partitions in SDMMC_USER (instance 3)
+[0003.842] I> regulator 'vdd-hdmi-5v0' already enabled
+[0003.848] I> regulator 'vdd-hdmi-5v0' already enabled
+[0003.848] I> hdmi cable connected
+[0003.854] W> set volts not configured for 'vdd-1v0'
+[0003.860] W> set volts not configured for 'vdd-1v8-hs'
+[0003.860] I> retrieved tmds range from prod_list_hdmi_soc
+[0003.861] E> cannot find any other nvdisp nodes
+[0003.878] I> edid read success
+[0003.890] I> edid read success
+[0003.891] I> width = 640, height = 480, frequency = 25174825
+[0003.891] I> width = 640, height = 480, frequency = 25174825
+[0003.891] I> width = 1024, height = 768, frequency = 65000000
+[0003.892] I> width = 1024, height = 768, frequency = 65000000
+[0003.892] I> width = 2560, height = 1440, frequency = 241500000
+[0003.896] I> width = 1920, height = 1080, frequency = 148500000
+[0003.902] I> width = 1920, height = 1080, frequency = 148351648
+[0003.908] I> width = 1280, height = 720, frequency = 74175824
+[0003.913] I> width = 720, height = 480, frequency = 26973026
+[0003.919] I> width = 720, height = 480, frequency = 26973026
+[0003.924] I> width = 1920, height = 1080, frequency = 148351648
+[0003.930] I> width = 1280, height = 720, frequency = 74175824
+[0003.936] I> width = 720, height = 576, frequency = 26973026
+[0003.941] I> width = 720, height = 576, frequency = 26973026
+[0003.947] I> width = 640, height = 480, frequency = 25174825
+[0003.952] I> Best mode Width = 1920, Height = 1080, freq = 148351648
+[0003.963] I> hdmi_enable, starting HDMI initialisation
+[0003.968] I> hdmi_enable, HDMI initialisation complete
+[0003.978] initializing target
+[0003.978] calling apps_init()
+[0003.979] starting app kernel_boot_app
+[0003.980] I> Kernel type = Normal
+
+Jetson UEFI firmware (version 4.1-33958178 built on 2023-08-01T19:34:02+00:00)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+▒▒I/TC: Reserved shared memory is disabled
+I/TC: Dynamic shared memory is enabled
+I/TC: Normal World virtualization support is disabled
+I/TC: Asynchronous notifications are disabled
+▒▒
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ▒▒E/TC:? 0 get_rpc_alloc_res:645 RPC allocation failed. Non-secure world result: ret=0xffff0000 ret_origin=0
+E/LD:  init_elf:486 sys_open_ta_bin(bc50d971-d4c9-42c4-82cb-343fb7f37896)
+E/TC:? 0 ldelf_init_with_ldelf:131 ldelf failed with res: 0xffff000c
+▒▒
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
