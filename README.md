@@ -18,9 +18,9 @@ https://forums.developer.nvidia.com/t/jetson-xavier-carrier-board-hdmi-issue/271
 ------------------------------------------------------------------------------------
 uhj2kor@BANI-C-00428:~/Flash_Jetson_temp$ fdtdump tegra194-p3668-0000-p3509-0000.dtb > /tmp/test.txt 
 
-**** fdtdump is a low-level debugging tool, not meant for general use.
-**** If you want to decompile a dtb, you probably want
-****     dtc -I dtb -O dts <filename>
+fdtdump is a low-level debugging tool, not meant for general use.
+If you want to decompile a dtb, you probably want
+dtc -I dtb -O dts <filename>
 ------------------------------------------------------------------------------------
 Install FDT viewer -> need docker for this
 
