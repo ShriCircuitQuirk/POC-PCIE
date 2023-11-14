@@ -1,6 +1,8 @@
 # POC-PCIE
 
+
 dmesg from jetson development kit:
+
 pcie@ubuntu:~$ sudo su -
 [sudo] password for pcie: 
 root@ubuntu:~# dmesg | grep DTS
